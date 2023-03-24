@@ -2,8 +2,6 @@ Here is a Home Assistant Addon to connect a Russound CA-66 with Home Assistant. 
 
 First off, a (non chinese knock-off) USB to RS-232 prolific or FTDI is needed. I found one on amazon for about 15$
 
-Make sure Portainer is installed with the community add-ons
-
 In the Home Assistant Config folder, create a new folder called ser2net and create a new file called ser2net.conf. it should look like this : /config/ser2net/ser2net.conf
 
 Edit and save this file with this content:
