@@ -20,13 +20,26 @@ To install this add-on, you need to do the following steps:
 - 
 ## Configuration
 
-To configure this add-on, you need to do the following steps:
+Edit the config file for Home Assistant to add the Russound RNET controller (Edit the sources as needed):
+```media_player:
+  - platform: russound_rnet
+    host: 127.0.0.1
+    port: 3333 
+    name: Russound
+    zones:
+      1:
+        name: Bathroom
+      2:
+        name: Living Room
+      3:
+        name: Kitchen
+      4:
+        name: Outdoor
+    sources:
+      - name: Cable
+      - name: TV
+      - name: Android
+      - name: Bluetooth
+      ```
 
-- Connect your russound caa-66 device to your home assistant system using a USB to RS-232 cable.
-- In the add-on configuration panel, set the device path to `/dev/ttyUSB0` or the appropriate path for your system.
-- In the add-on configuration panel, set the port number to `3333` or the appropriate port for your system.
-- In the add-on configuration panel, set the baud rate to `19200` or the appropriate rate for your device.
-- In the add-on configuration panel, set the data bits to `8`, the parity to `NONE`, and the stop bits to `1`.
-- Start the add-on and check the logs for any errors or warnings.
-- In your Home Assistant Config folder, open the configuration.yaml file and add the following lines:
 
