@@ -25,4 +25,3 @@ Edit the config file for Home Assistant to add the Russound RNET controller (Edi
       - name: TV
       - name: Android
       - name: Bluetooth
-      ```
